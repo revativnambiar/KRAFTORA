@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <pattern id="fabric-open" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="4" x2="8" y2="4" stroke="#2C4F72" stroke-width="0.5" opacity="0.4"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#2C4F72" stroke-width="0.3" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="topView" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.25)"/>
+    </linearGradient>
+    <linearGradient id="innerShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.3)"/>
+      <stop offset="60%" stop-color="rgba(0,0,0,0.05)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="480" fill="#FAF7F2"/>
+
+  <!-- Drop shadow -->
+  <ellipse cx="240" cy="455" rx="128" ry="14" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- KRAFT BAG - 3/4 perspective view -->
+  <!-- Bag back face (top) -->
+  <rect x="70" y="60" width="340" height="370" rx="2" fill="#C8A070"/>
+  <rect x="70" y="60" width="340" height="370" rx="2" fill="none" stroke="#A07545" stroke-width="1" opacity="0.5"/>
+
+  <!-- NAVY LINER — visible inside the open bag -->
+  <!-- Liner back wall -->
+  <rect x="82" y="72" width="316" height="345" rx="1" fill="#1B3A5A"/>
+  <rect x="82" y="72" width="316" height="345" rx="1" fill="url(#fabric-open)"/>
+
+  <!-- Liner inner shadow (depth) -->
+  <rect x="82" y="72" width="316" height="80" rx="1" fill="url(#innerShadow)"/>
+
+  <!-- Liner left wall (inside view) -->
+  <polygon points="82,72 42,105 42,440 82,417" fill="#16304D" opacity="0.9"/>
+
+  <!-- Liner right wall (inside view) -->
+  <polygon points="398,72 438,105 438,440 398,417" fill="#16304D" opacity="0.7"/>
+
+  <!-- Liner bottom floor -->
+  <polygon points="82,417 42,440 438,440 398,417" fill="#152B45" opacity="0.9"/>
+
+  <!-- Bag outer left wall (perspective) -->
+  <polygon points="70,60 28,96 28,432 70,430" fill="#B88A5A"/>
+  <polygon points="70,60 28,96 28,432 70,430" fill="none" stroke="#9A7040" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Bag outer right wall (perspective) -->
+  <polygon points="410,60 452,96 452,432 410,430" fill="#B88A5A" opacity="0.85"/>
+  <polygon points="410,60 452,96 452,432 410,430" fill="none" stroke="#9A7040" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Bag outer bottom (perspective) -->
+  <polygon points="70,430 28,432 452,432 410,430" fill="#A87848"/>
+
+  <!-- TOP RIM - Navy liner folded over bag top -->
+  <!-- Left side liner fold -->
+  <polygon points="28,96 70,60 70,76 28,112" fill="#1E3E62"/>
+  <!-- Right side liner fold -->
+  <polygon points="452,96 410,60 410,76 452,112" fill="#1B3858"/>
+  <!-- Front top liner fold -->
+  <rect x="70" y="60" width="340" height="16" rx="1" fill="#1E4068"/>
+  <!-- Back rim highlight -->
+  <rect x="70" y="60" width="340" height="4" fill="#264D80" opacity="0.7"/>
+
+  <!-- LEFT HANDLE (perspective) -->
+  <path d="M 118 62 C 118 10 155 -5 170 -5 C 185 -5 185 10 185 62"
+        fill="none" stroke="#7A5530" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 121 62 C 121 13 156 -2 171 -2 C 184 -2 184 13 184 62"
+        fill="none" stroke="#A07A50" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- RIGHT HANDLE (perspective) -->
+  <path d="M 290 62 C 290 10 310 -5 325 -5 C 340 -5 360 10 360 62"
+        fill="none" stroke="#7A5530" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 293 62 C 293 13 311 -2 326 -2 C 339 -2 358 13 357 62"
+        fill="none" stroke="#A07A50" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Liner fabric texture label area -->
+  <text x="240" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="rgba(255,255,255,0.3)" letter-spacing="3">NAVY LINER</text>
+</svg>
+

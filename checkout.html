@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout — KRAFTORA</title>
+  <meta name="description" content="Complete your order for the Splash-Resistant Reusable Shopping Bag by KRAFTORA. Sustainable packaging. Elevated style."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body data-page="checkout">
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="KRAFTORA — Sustainable Packaging. Elevated Style.">
+        <img src="images/kraftora-logo.png" alt="KRAFTORA — Sustainable Packaging. Elevated Style." class="nav__logo-img" width="92" height="52"/>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="index.html"        class="nav__link" data-nav="home">Home</a></li>
+        <li><a href="shop.html"         class="nav__link" data-nav="shop">Shop</a></li>
+        <li><a href="about.html"        class="nav__link" data-nav="about">About</a></li>
+        <li><a href="how-its-made.html" class="nav__link" data-nav="process">How It's Made</a></li>
+        <li><a href="contact.html"      class="nav__link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="shop.html" class="btn btn--secondary btn--sm" style="display:inline-flex; padding:0.55rem 1.2rem;">Back to Shop</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== CHECKOUT MAIN ===================== -->
+<main class="checkout-page bg-cream">
+  <div class="container">
+
+    <!-- CHECKOUT FORM SECTION -->
+    <div id="checkoutFormSection">
+      <div class="breadcrumb mb-4" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Checkout</span>
+      </div>
+
+      <h1 class="section-heading mb-6">Complete Your Order</h1>
+
+      <!-- Direct Purchase Notice -->
+      <div style="background:var(--soft-green); border:1px solid var(--border); border-radius:var(--r-sm); padding:var(--s-4) var(--s-6); margin-bottom:var(--s-8); display:flex; align-items:center; gap:var(--s-3);">
+        <svg style="width:20px; height:20px; color:var(--green); flex-shrink:0;" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l2.5 2.5"/></svg>
+        <span style="font-size:0.92rem; color:var(--green-dark);">
+          <strong>Direct Order Processing:</strong> Enter your delivery details below to place your order. An official KRAFTORA order reference will be generated immediately.
+        </span>
+      </div>
+
+      <div class="checkout-layout">
+
+        <!-- LEFT: FORM -->
+        <div class="checkout-box">
+          <form id="checkoutForm" novalidate aria-label="Checkout form">
+
+            <!-- Contact Information -->
+            <div class="co-section">
+              <div class="co-section__title">1. Customer Contact Details</div>
+              <div class="form-grid">
+                <div class="form-group col-full">
+                  <label class="form-label" for="co-name">Full Name <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-name" name="name" type="text" placeholder="e.g. Priya Sharma" autocomplete="name" required/>
+                  <span class="form-err" id="err-name" role="alert">Please enter your full name.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-email">Email Address <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required/>
+                  <span class="form-err" id="err-email" role="alert">Please enter a valid email address.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-phone">Phone Number <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" required/>
+                  <span class="form-err" id="err-phone" role="alert">Please enter a valid phone number.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shipping Address -->
+            <div class="co-section">
+              <div class="co-section__title">2. Delivery Address</div>
+              <div class="form-grid">
+                <div class="form-group col-full">
+                  <label class="form-label" for="co-addr">House / Building / Street Address <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-addr" name="address" type="text" placeholder="House / Flat / Building No., Street Road" autocomplete="street-address" required/>
+                  <span class="form-err" id="err-addr" role="alert">Please enter your street address.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-city">City <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-city" name="city" type="text" placeholder="City" autocomplete="address-level2" required/>
+                  <span class="form-err" id="err-city" role="alert">Please enter your city.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-state">State <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-state" name="state" type="text" placeholder="State" autocomplete="address-level1" required/>
+                  <span class="form-err" id="err-state" role="alert">Please enter your state.</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="co-pin">Postal Code (PIN) <span aria-hidden="true" style="color:#B42828;">*</span></label>
+                  <input class="form-input" id="co-pin" name="pin" type="text" placeholder="PIN code" autocomplete="postal-code" inputmode="numeric" required/>
+                  <span class="form-err" id="err-pin" role="alert">Please enter a valid postal code.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Delivery Method -->
+            <div class="co-section">
+              <div class="co-section__title">3. Delivery &amp; Packaging</div>
+              <div style="background:var(--soft-green); border:1px solid var(--border); border-radius:var(--r-sm); padding:var(--s-4) var(--s-5); font-size:0.92rem; color:var(--green-dark);">
+                <strong>Standard Eco-Tracked Shipping:</strong> Shipped in 100% plastic-free recycled paper parcel. Delivered within 3–5 working days.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              Confirm &amp; Place Order
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: ORDER SUMMARY (Live Calculated from Selected Size & Qty) -->
+        <div>
+          <div class="order-summary" aria-label="Order summary">
+            <div class="order-summary__title">Order Summary</div>
+            <div id="orderItems" aria-live="polite" style="margin-bottom:var(--s-4);"></div>
+            <div class="order-row">
+              <span>Product Subtotal</span>
+              <span id="orderSubtotal" style="font-weight:600; color:var(--green-dark);">₹40</span>
+            </div>
+            <div class="order-row">
+              <span>Shipping Charge</span>
+              <span id="orderShipping" style="font-weight:600; color:var(--green-dark);">FREE</span>
+            </div>
+            <div class="order-total">
+              <span>Final Amount</span>
+              <span id="orderTotal">₹40</span>
+            </div>
+            <div style="font-size:0.8rem; color:var(--text-light); margin-top:var(--s-4); line-height:1.6; background:var(--soft-green); padding:8px 12px; border-radius:var(--r-sm);">
+              <strong>Shipping Policy:</strong> Small bag: FREE shipping | Medium &amp; Large: flat ₹29 once per order.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ORDER CONFIRMATION -->
+    <div id="confirmationSection" style="display:none;" aria-live="polite">
+      <div class="confirmation-card">
+        <div style="display:flex; justify-content:center; margin-bottom:var(--s-4);">
+          <img src="images/kraftora-logo.png" alt="KRAFTORA — Sustainable Packaging. Elevated Style." class="conf-logo-img" width="113" height="64"/>
+        </div>
+
+        <svg class="confirmation-card__check" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" fill="rgba(23,77,53,0.08)" stroke="currentColor"/>
+          <path d="M20 32 L28 40 L44 24"/>
+        </svg>
+        <div class="badge badge--in-stock mb-3">Order Confirmed</div>
+        <h2 class="section-heading mb-3">Thank You for Choosing KRAFTORA!</h2>
+        <p class="lead mb-6" style="color:var(--text-mid);">
+          Your order has been registered and is being prepared with sustainable care.
+        </p>
+
+        <!-- Demo Order Disclosure Notice -->
+        <div style="background:#FFF8E7; border:1px solid #E6D0A0; border-radius:var(--r-sm); padding:10px 16px; margin-bottom:var(--s-6); font-size:0.875rem; color:#8C5E35; text-align:center;">
+          <strong>Demo Order Notice:</strong> This is an interactive demo order. No payment has been processed.
+        </div>
+
+        <div class="confirmation-card__ref" aria-label="Order reference number">
+          Order Ref: <span id="confRef">KF-100000</span>
+        </div>
+
+        <div style="background:var(--soft-green); border:1px solid var(--border); border-radius:var(--r-sm); padding:var(--s-6); text-align:left; margin-bottom:var(--s-8);">
+          <div style="display:flex; justify-content:space-between; padding-block:6px; border-bottom:1px solid rgba(23,77,53,0.12); font-size:0.9rem;">
+            <span style="color:var(--text-light);">Customer:</span>
+            <strong id="confName" style="color:var(--green-dark);">—</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-block:6px; border-bottom:1px solid rgba(23,77,53,0.12); font-size:0.9rem;">
+            <span style="color:var(--text-light);">Email:</span>
+            <strong id="confEmail" style="color:var(--green-dark);">—</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-block:6px; border-bottom:1px solid rgba(23,77,53,0.12); font-size:0.9rem;">
+            <span style="color:var(--text-light);">Phone:</span>
+            <strong id="confPhone" style="color:var(--green-dark);">—</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-block:6px; border-bottom:1px solid rgba(23,77,53,0.12); font-size:0.9rem;">
+            <span style="color:var(--text-light);">Delivery Address:</span>
+            <span id="confAddress" style="color:var(--green-dark); font-weight:500; text-align:right;">—</span>
+          </div>
+
+          <div style="margin-top:var(--s-4); margin-bottom:var(--s-3);">
+            <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-light); margin-bottom:var(--s-2);">
+              Ordered Item:
+            </div>
+            <div id="confItemsList"></div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; padding-block:6px; border-top:1px solid rgba(23,77,53,0.12); font-size:0.9rem;">
+            <span style="color:var(--text-light);">Product Subtotal:</span>
+            <strong id="confSubtotal" style="color:var(--green-dark);">₹40</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-block:6px; font-size:0.9rem;">
+            <span style="color:var(--text-light);">Shipping Charge:</span>
+            <strong id="confShipping" style="color:var(--green-dark);">FREE</strong>
+          </div>
+          <div style="display:flex; justify-content:space-between; padding-block:10px 0; border-top:1.5px solid var(--border); font-size:1.15rem; font-weight:700; color:var(--green-dark);">
+            <span>Final Amount:</span>
+            <span id="confTotal">₹40</span>
+          </div>
+        </div>
+
+        <a href="shop.html" class="btn btn--primary btn--lg">Return to Shop</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__brand-logo mb-3">
+          <img src="images/kraftora-logo-light.png" alt="KRAFTORA" class="footer__logo-img" width="99" height="56"/>
+        </div>
+        <p class="footer__brand-desc">
+          Thoughtful, splash-resistant reusable shopping bags combining natural kraft paper with removable liners crafted from reclaimed umbrella and raincoat fabric. Sustainable packaging. Elevated style.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Navigation</div>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html"        class="footer__link">Home</a></li>
+          <li><a href="shop.html"         class="footer__link">Shop</a></li>
+          <li><a href="about.html"        class="footer__link">About</a></li>
+          <li><a href="how-its-made.html" class="footer__link">How It's Made</a></li>
+          <li><a href="contact.html"      class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">The Product</div>
+        <ul class="footer__links" role="list">
+          <li><a href="product.html" class="footer__link">Splash-Resistant Bag</a></li>
+          <li><a href="how-its-made.html" class="footer__link">Making Process</a></li>
+          <li><a href="product.html" class="footer__link">Available Sizes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Customer Care</div>
+        <p class="footer__brand-desc" style="font-size:0.875rem; margin-bottom:var(--s-4);">
+          Questions regarding materials, sizing, bulk orders, or care recommendations? Our team is glad to assist.
+        </p>
+        <a href="contact.html" class="btn btn--secondary btn--sm" style="color:var(--white); border-color:var(--sage);">
+          Contact Our Team
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2024 KRAFTORA. All rights reserved.</span>
+      <span>Sustainable Packaging. Elevated Style.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Splash-Resistant Reusable Shopping Bag — KRAFTORA</title>
+  <meta name="description"
+    content="A reusable kraft paper bag with a removable navy-blue liner made from reclaimed umbrella or raincoat fabric. Splash-resistant. Practical. Everyday. Sustainable packaging. Elevated style." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-page="product">
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="KRAFTORA — Sustainable Packaging. Elevated Style.">
+          <img src="images/kraftora-logo.png" alt="KRAFTORA — Sustainable Packaging. Elevated Style." class="nav__logo-img" width="92" height="52"/>
+        </a>
+
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a href="index.html" class="nav__link" data-nav="home">Home</a></li>
+          <li><a href="shop.html" class="nav__link" data-nav="shop">Shop</a></li>
+          <li><a href="about.html" class="nav__link" data-nav="about">About</a></li>
+          <li><a href="how-its-made.html" class="nav__link" data-nav="process">How It's Made</a></li>
+          <li><a href="contact.html" class="nav__link" data-nav="contact">Contact</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="shop.html" class="btn btn--primary btn--sm" style="display:inline-flex; padding:0.55rem 1.2rem;">Shop Now</a>
+          <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== BREADCRUMB ===================== -->
+  <div style="background: var(--soft-green); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Splash-Resistant Reusable Shopping Bag</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===================== PRODUCT DETAIL ===================== -->
+  <main class="product-page bg-cream">
+    <div class="container">
+      <div class="product-layout">
+
+        <!-- GALLERY -->
+        <div class="product-gallery" aria-label="Product gallery">
+          <div class="gallery__main" id="galleryMainWrap" role="button" tabindex="0"
+            aria-label="Click to enlarge image">
+            <img id="galleryMain" src="images/product-front.svg"
+              alt="Splash-Resistant Reusable Shopping Bag – front view" width="480" height="480" loading="eager" />
+            <span class="gallery__label" id="galleryLabel" aria-live="polite">Front View</span>
+          </div>
+          <div class="gallery__thumbs" role="list" aria-label="Product image thumbnails">
+            <div class="gallery__thumb active" role="listitem" tabindex="0" aria-label="Front View" aria-pressed="true">
+              <img src="images/product-front.svg" alt="Front view" loading="lazy" />
+            </div>
+            <div class="gallery__thumb" role="listitem" tabindex="0" aria-label="Open Interior" aria-pressed="false">
+              <img src="images/product-open.svg" alt="Open bag showing liner" loading="lazy" />
+            </div>
+            <div class="gallery__thumb" role="listitem" tabindex="0" aria-label="Liner Detail" aria-pressed="false">
+              <img src="images/product-liner.svg" alt="Removable navy liner" loading="lazy" />
+            </div>
+            <div class="gallery__thumb" role="listitem" tabindex="0" aria-label="Components" aria-pressed="false">
+              <img src="images/product-assembly.svg" alt="Bag and liner components" loading="lazy" />
+            </div>
+            <div class="gallery__thumb" role="listitem" tabindex="0" aria-label="Full Construction"
+              aria-pressed="false">
+              <img src="images/product-reference.jpg" alt="Construction reference sheet" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT INFO -->
+        <div class="product-info">
+          <div class="product-info__badge" id="productBadge" aria-live="polite">
+            <span class="badge badge--in-stock">Handcrafted · In Stock</span>
+          </div>
+          <h1 class="product-info__title">Splash-Resistant Reusable Shopping Bag</h1>
+
+          <div class="product-info__price-block">
+            <div class="product-info__price" id="productPrice" aria-live="polite">₹40</div>
+            <div class="product-info__price-note" id="priceShippingNote">Size: Small (₹40) · FREE Shipping</div>
+          </div>
+
+          <p class="product-info__desc">
+            A thoughtfully designed reusable shopping bag featuring a natural kraft paper exterior and a removable inner
+            liner made from reclaimed umbrella or raincoat fabric. Designed to make everyday grocery and market runs
+            more practical while giving suitable reclaimed textiles another life.
+          </p>
+
+          <!-- Size Selector Buttons -->
+          <div class="size-selector-wrap" aria-label="Select bag size">
+            <div class="size-selector-header">
+              <span class="size-selector-label">1. Choose Size:</span>
+              <span class="selected-size-pill" id="selectedSizeDisplay">Small (₹40)</span>
+            </div>
+            <div class="size-buttons-grid" role="radiogroup" aria-label="Available sizes">
+              <button type="button" class="size-btn product-size-btn active" data-size="small" role="radio" aria-checked="true">
+                <span class="size-btn__name">Small</span>
+                <span class="size-btn__price">₹40</span>
+                <span class="size-btn__ship">Free Shipping</span>
+              </button>
+              <button type="button" class="size-btn product-size-btn" data-size="medium" role="radio" aria-checked="false">
+                <span class="size-btn__name">Medium</span>
+                <span class="size-btn__price">₹80</span>
+                <span class="size-btn__ship">₹29 Shipping</span>
+              </button>
+              <button type="button" class="size-btn product-size-btn" data-size="large" role="radio" aria-checked="false">
+                <span class="size-btn__name">Large</span>
+                <span class="size-btn__price">₹120</span>
+                <span class="size-btn__ship">₹29 Shipping</span>
+              </button>
+            </div>
+            <div class="size-dimensions-note" id="sizeDimensionsNote">
+              <strong>Selected Size: Small</strong> — 24 cm (H) × 20 cm (W) × 10 cm (D) (Approx. 5 Litres). Compact daily bag for lunches, bakery goods & books.
+            </div>
+          </div>
+
+          <!-- Quantity -->
+          <div class="qty-row">
+            <span class="qty-label">2. Quantity</span>
+            <div class="qty-selector" role="group" aria-label="Quantity selector">
+              <button class="qty-btn" id="qtyMinus" aria-label="Decrease quantity" disabled>−</button>
+              <div class="qty-val" id="qtyVal" aria-live="polite" aria-atomic="true">1</div>
+              <button class="qty-btn" id="qtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+
+          <!-- Single Prominent BUY NOW Button for KRAFTORA (No Shopping Cart) -->
+          <div style="margin-bottom:var(--s-8);">
+            <div class="order-live-preview" id="liveOrderPreview">
+              <span><strong>Selected:</strong> 1 × Small</span>
+              <span>Subtotal: ₹40 · Shipping: FREE · Total: <strong>₹40</strong></span>
+            </div>
+
+            <button class="btn--buy-now-prominent" id="buyNowBtn" type="button" aria-label="Buy Splash-Resistant Reusable Shopping Bag now">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+              <span>Buy Now</span>
+            </button>
+
+            <p style="font-size:0.8rem; color:var(--text-light); text-align:center; margin-top:var(--s-3); line-height:1.4;">
+              Direct checkout · No shopping cart needed · Delivered in eco-friendly packaging
+            </p>
+          </div>
+
+          <!-- Product Accordion Tabs -->
+          <div class="product-tabs" role="list">
+
+            <div class="p-tab" role="listitem">
+              <button class="p-tab__header" aria-expanded="false">
+                <span>Product Description</span>
+                <svg class="p-tab__chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M5 7.5l5 5 5-5" />
+                </svg>
+              </button>
+              <div class="p-tab__body">
+                <p>The Splash-Resistant Reusable Shopping Bag combines two purposeful materials: a natural kraft paper
+                  outer bag and a removable inner liner stitched from reclaimed umbrella or raincoat fabric.</p>
+                <br />
+                <p>The navy liner sits neatly inside the bag and folds over the top rim to stay secure during shopping.
+                  It is not glued in — it lifts out in a single motion for cleaning or when the paper bag needs to be
+                  recycled separately.</p>
+                <br />
+                <p>The liner provides splash-resistance against damp grocery items and rainy days. It is not designed to
+                  be submerged as fully waterproof. The outer kraft paper bag remains completely uncoated and
+                  unlaminated throughout.</p>
+              </div>
+            </div>
+
+            <div class="p-tab" role="listitem">
+              <button class="p-tab__header" aria-expanded="false">
+                <span>Materials &amp; Construction</span>
+                <svg class="p-tab__chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M5 7.5l5 5 5-5" />
+                </svg>
+              </button>
+              <div class="p-tab__body">
+                <div class="spec-table">
+                  <div class="spec-row"><span class="spec-label">Outer Bag</span><span class="spec-val">Natural kraft
+                      paper (uncoated, reinforced 120 GSM)</span></div>
+                  <div class="spec-row"><span class="spec-label">Liner Material</span><span class="spec-val">Reclaimed
+                      umbrella or raincoat fabric — dark navy blue</span></div>
+                  <div class="spec-row"><span class="spec-label">Liner Fit</span><span class="spec-val">Removable
+                      tailored insert. Zero glue or permanent adhesive used.</span></div>
+                  <div class="spec-row"><span class="spec-label">Water Resistance</span><span
+                      class="spec-val">Splash-resistant against damp groceries and rain droplets.</span></div>
+                  <div class="spec-row"><span class="spec-label">Handle Type</span><span class="spec-val">Twisted kraft
+                      cord handles with interior anchor reinforcement</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-tab" role="listitem">
+              <button class="p-tab__header" aria-expanded="false">
+                <span>Product Specifications</span>
+                <svg class="p-tab__chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M5 7.5l5 5 5-5" />
+                </svg>
+              </button>
+              <div class="p-tab__body">
+                <div class="spec-table">
+                  <div class="spec-row">
+                    <span class="spec-label">Available Sizes &amp; Prices</span>
+                    <span class="spec-val">Small (₹40) · Medium (₹80) · Large (₹120)</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Size Dimensions (H×W×D)</span>
+                    <span class="spec-val">Small: 24×20×10 cm | Medium: 32×26×12 cm | Large: 40×32×15 cm</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Shipping Charges</span>
+                    <span class="spec-val">Small: FREE | Medium &amp; Large: ₹29 flat per order</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Liner Dimensions</span>
+                    <span class="spec-val">Tailored 5-panel pouch fitted to interior bag volume for each size</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Origin &amp; Assembly</span>
+                    <span class="spec-val">Handcrafted in small batches using upcycled textiles</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">End-of-Life</span>
+                    <span class="spec-val">Paper shell 100% curbside recyclable; liner transfers to next bag</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-tab" role="listitem">
+              <button class="p-tab__header" aria-expanded="false">
+                <span>Care &amp; Maintenance</span>
+                <svg class="p-tab__chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" aria-hidden="true">
+                  <path d="M5 7.5l5 5 5-5" />
+                </svg>
+              </button>
+              <div class="p-tab__body">
+                <ul style="display:flex; flex-direction:column; gap:var(--s-3); padding-left:var(--s-4);">
+                  <li style="list-style: disc;">Remove the liner before cleaning either component.</li>
+                  <li style="list-style: disc;">Liner wipes clean with a damp cloth or cold sponge rinse.</li>
+                  <li style="list-style: disc;">Liner can be hand-washed gently with mild soap and air-dried flat.</li>
+                  <li style="list-style: disc;">Keep the kraft paper bag dry. Do not submerge the paper shell in water.
+                  </li>
+                  <li style="list-style: disc;">Store with the liner fitted inside to help the bag retain its
+                    rectangular shape.</li>
+                  <li style="list-style: disc;">When the paper bag eventually wears out, recycle it and move the liner
+                    to a fresh bag.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- /product-tabs -->
+        </div><!-- /product-info -->
+
+      </div><!-- /product-layout -->
+    </div>
+  </main>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image enlarged view">
+    <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__brand-logo mb-3">
+            <img src="images/kraftora-logo-light.png" alt="KRAFTORA" class="footer__logo-img" width="99" height="56"/>
+          </div>
+          <p class="footer__brand-desc">
+            Thoughtful, splash-resistant reusable shopping bags combining natural kraft paper with removable liners
+            crafted from reclaimed umbrella and raincoat fabric. Sustainable packaging. Elevated style.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Navigation</div>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+            <li><a href="how-its-made.html" class="footer__link">How It's Made</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">The Product</div>
+          <ul class="footer__links" role="list">
+            <li><a href="product.html" class="footer__link">Splash-Resistant Bag</a></li>
+            <li><a href="how-its-made.html" class="footer__link">Making Process</a></li>
+            <li><a href="shop.html" class="footer__link">Available Sizes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Customer Care</div>
+          <p class="footer__brand-desc" style="font-size:0.875rem; margin-bottom:var(--s-4);">
+            Questions regarding materials, sizing, bulk orders, or care recommendations? Our team is glad to assist.
+          </p>
+          <a href="contact.html" class="btn btn--secondary btn--sm"
+            style="color:var(--white); border-color:var(--sage);">
+            Contact Our Team
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2024 KRAFTORA. All rights reserved.</span>
+        <span>Sustainable Packaging. Elevated Style.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

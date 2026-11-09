@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <pattern id="fabric-liner" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="4" x2="8" y2="4" stroke="#2C4F72" stroke-width="0.6" opacity="0.5"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#2C4F72" stroke-width="0.4" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="linerBodyGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.08)"/>
+      <stop offset="12%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="88%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.08)"/>
+    </linearGradient>
+    <linearGradient id="topFoldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A5080"/>
+      <stop offset="100%" stop-color="#1B3A5A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="480" fill="#FAF7F2"/>
+
+  <!-- Drop shadow -->
+  <ellipse cx="240" cy="455" rx="118" ry="13" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- REMOVABLE NAVY LINER — standing alone -->
+
+  <!-- Left side wall (slight 3D effect) -->
+  <polygon points="80,75 55,100 55,435 80,415" fill="#152D48"/>
+
+  <!-- Right side wall -->
+  <polygon points="400,75 425,100 425,435 400,415" fill="#152D48" opacity="0.8"/>
+
+  <!-- Bottom -->
+  <polygon points="80,415 55,435 425,435 400,415" fill="#122840"/>
+
+  <!-- Main front face -->
+  <rect x="80" y="75" width="320" height="340" rx="1" fill="#1B3A5A"/>
+  <rect x="80" y="75" width="320" height="340" rx="1" fill="url(#fabric-liner)"/>
+  <rect x="80" y="75" width="320" height="340" rx="1" fill="url(#linerBodyGrad)"/>
+  <rect x="80" y="75" width="320" height="340" rx="1" fill="none" stroke="#152D48" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Top fold-over edge of liner -->
+  <rect x="80" y="62" width="320" height="20" rx="1" fill="url(#topFoldGrad)"/>
+  <rect x="80" y="62" width="320" height="20" rx="1" fill="url(#fabric-liner)" opacity="0.6"/>
+  <rect x="80" y="62" width="320" height="4" rx="1" fill="#3060A0" opacity="0.5"/>
+
+  <!-- Liner top edge label -->
+  <text x="240" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#2A5080" letter-spacing="2" opacity="0.8">FOLD OVER RIM</text>
+
+  <!-- Stitch lines along top fold -->
+  <line x1="82" y1="78" x2="398" y2="78" stroke="#264D74" stroke-width="0.6" stroke-dasharray="5,4" opacity="0.6"/>
+
+  <!-- Stitch lines at corners -->
+  <line x1="82" y1="413" x2="398" y2="413" stroke="#264D74" stroke-width="0.6" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- Water droplet icon (splash resistant) -->
+  <g transform="translate(220, 220)">
+    <path d="M 20 5 C 20 5 5 20 5 30 C 5 38 12 44 20 44 C 28 44 35 38 35 30 C 35 20 20 5 20 5Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <line x1="20" y1="5" x2="20" y2="44" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+  </g>
+
+  <!-- Annotation: Reclaimed fabric label -->
+  <text x="240" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="rgba(255,255,255,0.25)" letter-spacing="3">RECLAIMED FABRIC</text>
+  <text x="240" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.18)" letter-spacing="1">umbrella · raincoat</text>
+</svg>
+

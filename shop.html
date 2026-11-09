@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop — KRAFTORA</title>
+  <meta name="description" content="Explore the Splash-Resistant Reusable Shopping Bag by KRAFTORA. Crafted with natural kraft paper and a removable, splash-resistant reclaimed navy fabric liner. Sustainable packaging. Elevated style."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body data-page="shop">
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="KRAFTORA — Sustainable Packaging. Elevated Style.">
+        <img src="images/kraftora-logo.png" alt="KRAFTORA — Sustainable Packaging. Elevated Style." class="nav__logo-img" width="92" height="52"/>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="index.html"        class="nav__link" data-nav="home">Home</a></li>
+        <li><a href="shop.html"         class="nav__link" data-nav="shop">Shop</a></li>
+        <li><a href="about.html"        class="nav__link" data-nav="about">About</a></li>
+        <li><a href="how-its-made.html" class="nav__link" data-nav="process">How It's Made</a></li>
+        <li><a href="contact.html"      class="nav__link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="product.html" class="btn btn--primary btn--sm" style="display:inline-flex; padding:0.55rem 1.2rem;">Buy Now</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== SECTION A: SHOP INTRODUCTION ===================== -->
+<header class="shop-header">
+  <div class="container">
+    <div class="breadcrumb" style="justify-content:center;" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <span aria-current="page">Shop</span>
+    </div>
+    <div class="shop-header__inner">
+      <div class="section-label section-label--center mb-3">The Signature Essential</div>
+      <h1 class="display-heading">Our Everyday Bag</h1>
+      <p class="shop-header__desc">
+        We believe in perfecting one essential carry item rather than producing endless disposable options. Explore our signature splash-resistant reusable kraft shopping bag — thoughtfully built with reclaimed fabric.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== SECTION B: FEATURED SHOWCASE CARD ===================== -->
+<section class="shop-showcase-section" aria-label="Featured Product Showcase">
+  <div class="container">
+    <div class="shop-showcase">
+
+      <!-- Left: Interactive Visual Display -->
+      <div class="shop-showcase__visual">
+        <div class="shop-showcase__main-img-wrap">
+          <img id="showcaseMainImg"
+               class="shop-showcase__main-img"
+               src="images/product-front.svg"
+               alt="Splash-Resistant Reusable Shopping Bag with navy-blue liner"
+               loading="eager"/>
+        </div>
+        <div>
+          <div style="text-align:center; font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-light); margin-bottom:var(--s-2);">
+            Select Visual Angle
+          </div>
+          <div class="shop-showcase__angle-pills" role="tablist" aria-label="Product angles">
+            <button class="angle-pill active" data-src="images/product-front.svg" role="tab" aria-selected="true">Front View</button>
+            <button class="angle-pill" data-src="images/product-open.svg" role="tab" aria-selected="false">Open Interior</button>
+            <button class="angle-pill" data-src="images/product-liner.svg" role="tab" aria-selected="false">Liner Detail</button>
+            <button class="angle-pill" data-src="images/product-assembly.svg" role="tab" aria-selected="false">Two Components</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Detailed Purchasing Information -->
+      <div class="shop-showcase__info">
+        <div class="shop-showcase__badge-row">
+          <span class="badge badge--in-stock">Handcrafted · In Stock</span>
+          <span class="badge badge--tbc" style="background:rgba(23,77,53,0.06); color:var(--green-dark);">Zero Virgin Plastic</span>
+        </div>
+
+        <h2 class="shop-showcase__title">Splash-Resistant Reusable Shopping Bag</h2>
+
+        <div class="shop-showcase__price-row">
+          <span class="shop-showcase__price" id="showcasePrice">₹40</span>
+          <span class="shop-showcase__price-note" id="showcasePriceNote">Outer bag + removable liner · Free Shipping</span>
+        </div>
+
+        <p class="shop-showcase__desc">
+          Thoughtfully redesigned for everyday grocery and market runs. Features a resilient natural kraft paper exterior paired with a removable, splash-resistant inner liner crafted from reclaimed umbrella or raincoat fabric.
+        </p>
+
+        <!-- Size Selection Buttons -->
+        <div class="size-selector-wrap" aria-label="Select bag size">
+          <div class="size-selector-header">
+            <span class="size-selector-label">Choose Size:</span>
+            <span class="selected-size-pill" id="showcaseDimensions">Size Small: 24×20×10 cm</span>
+          </div>
+          <div class="size-buttons-grid" id="showcaseSizeButtons" role="radiogroup" aria-label="Available sizes">
+            <button type="button" class="size-btn active" data-size="small" role="radio" aria-checked="true">
+              <span class="size-btn__name">Small</span>
+              <span class="size-btn__price">₹40</span>
+              <span class="size-btn__ship">Free Shipping</span>
+            </button>
+            <button type="button" class="size-btn" data-size="medium" role="radio" aria-checked="false">
+              <span class="size-btn__name">Medium</span>
+              <span class="size-btn__price">₹80</span>
+              <span class="size-btn__ship">₹29 Shipping</span>
+            </button>
+            <button type="button" class="size-btn" data-size="large" role="radio" aria-checked="false">
+              <span class="size-btn__name">Large</span>
+              <span class="size-btn__price">₹120</span>
+              <span class="size-btn__ship">₹29 Shipping</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Spec Highlights -->
+        <div class="shop-showcase__specs-mini">
+          <div class="spec-mini-item">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10l4 4L16 6"/></svg>
+            <span>Uncoated Natural Kraft</span>
+          </div>
+          <div class="spec-mini-item">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10l4 4L16 6"/></svg>
+            <span>Navy Reclaimed Cloth</span>
+          </div>
+          <div class="spec-mini-item">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10l4 4L16 6"/></svg>
+            <span>Removable Liner Insert</span>
+          </div>
+          <div class="spec-mini-item">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10l4 4L16 6"/></svg>
+            <span>Splash Moisture Shield</span>
+          </div>
+        </div>
+
+        <!-- Live Calculation Preview -->
+        <div class="order-live-preview" id="showcaseSubtotal" style="margin-top:var(--s-4); margin-bottom:var(--s-4);">
+          Subtotal: ₹40 · Shipping: FREE · Total: ₹40
+        </div>
+
+        <!-- Purchase Controls: Direct Buy Now Flow (No Shopping Cart) -->
+        <div class="shop-showcase__purchase">
+          <div class="qty-selector" role="group" aria-label="Quantity selector">
+            <button class="qty-btn" id="shopQtyMinus" aria-label="Decrease quantity" disabled>−</button>
+            <div class="qty-val" id="shopQtyVal">1</div>
+            <button class="qty-btn" id="shopQtyPlus" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="btn--buy-now-prominent" id="shopShowcaseBuyBtn" type="button" style="flex:1;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+            <span>Buy Now</span>
+          </button>
+
+          <a href="product.html" class="btn btn--outline btn--lg" style="text-align:center;">
+            View Details
+          </a>
+        </div>
+
+        <!-- Micro-Trust Points -->
+        <div class="shop-showcase__micro-trust">
+          <span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="8"/><path d="M6 10l3 3 5-5"/></svg>
+            Tested Splash Resistance
+          </span>
+          <span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l2.5 2.5"/></svg>
+            Ships in 24–48 Hours
+          </span>
+          <span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h12v12H4z"/></svg>
+            100% Recyclable Paper Shell
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION C1: THE FEATURED COLLECTION SPOTLIGHT ===================== -->
+<section class="section collection-spotlight bg-white" aria-label="The Featured Collection">
+  <div class="container">
+    <div class="spotlight-grid">
+      <div class="spotlight-content">
+        <div class="section-label mb-3">Our Core Philosophy</div>
+        <h2 class="section-heading">Why Only One Bag?</h2>
+        <p>
+          Fast-fashion and conventional retail rely on infinite variants that encourage overconsumption. At KRAFTORA, we set out with a different aim: design a single, perfected everyday shopping bag that solves the moisture issue inherent to traditional paper bags.
+        </p>
+        <p>
+          By combining natural kraft paper with a tailored removable insert made from discarded umbrella and raincoat panels, we created an enduring carry system that keeps single-use plastic out of the grocery run while giving existing materials a second chapter.
+        </p>
+        <div class="mt-6">
+          <a href="about.html" class="link-arrow">
+            Learn more about our material mission
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="spotlight-visual">
+        <img src="images/product-open.svg" alt="Open interior of bag showing dark navy-blue liner" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION C2: DESIGNED FOR EVERYDAY USE ===================== -->
+<section class="section bg-soft-green" aria-label="Designed for everyday use">
+  <div class="container">
+    <div class="text-center" style="max-width:680px; margin-inline:auto;">
+      <div class="section-label section-label--center mb-3">Daily Reliability</div>
+      <h2 class="section-heading">Designed for Everyday Use</h2>
+      <p class="lead mt-4">
+        Every detail of our bag is tailored to withstand real-world shopping situations without fuss.
+      </p>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <svg class="benefit-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 14h28l-3 20H11L8 14z"/>
+          <path d="M16 14V10a6 6 0 0 1 12 0v4"/>
+        </svg>
+        <div class="benefit-card__title">Grocery &amp; Market Runs</div>
+        <p class="benefit-card__text">Generously proportioned for bread loaves, fresh greens, farm eggs, dry goods, and daily retail necessities.</p>
+      </div>
+
+      <div class="benefit-card">
+        <svg class="benefit-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 6c0 0-10 12-10 20a10 10 0 0 0 20 0c0-8-10-20-10-20z"/>
+          <path d="M18 28a4 4 0 0 0 4 4" stroke-linecap="round"/>
+        </svg>
+        <div class="benefit-card__title">Splash &amp; Dampness Defense</div>
+        <p class="benefit-card__text">Cold milk cartons and wet greens condense moisture. The hydrophobic reclaimed liner keeps the paper shell sturdy.</p>
+      </div>
+
+      <div class="benefit-card">
+        <svg class="benefit-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 28 C 12 12, 32 12, 32 28"/>
+          <circle cx="22" cy="34" r="3" fill="currentColor"/>
+          <path d="M22 20v10"/>
+        </svg>
+        <div class="benefit-card__title">Reinforced Rope Grip</div>
+        <p class="benefit-card__text">Double-twisted kraft cord handles anchored securely inside the rim provide comfortable, hand-friendly transport.</p>
+      </div>
+
+      <div class="benefit-card">
+        <svg class="benefit-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M28 8H16a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V12a4 4 0 0 0-4-4z"/>
+          <path d="M22 14v14M16 22l6 6 6-6"/>
+        </svg>
+        <div class="benefit-card__title">Separate End-of-Life</div>
+        <p class="benefit-card__text">No fused plastic. The paper bag recycles cleanly in ordinary municipal bins; the durable cloth liner continues in another bag.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION C3: THE REMOVABLE LINER ===================== -->
+<section class="section bg-cream" aria-label="The Removable Liner">
+  <div class="container">
+    <div class="spotlight-grid" style="grid-template-columns: 1fr 1.1fr;">
+      <div class="spotlight-visual" style="background:var(--white);">
+        <img src="images/product-liner.svg" alt="Navy-blue removable fabric liner pouch" loading="lazy"/>
+      </div>
+      <div class="spotlight-content">
+        <div class="section-label mb-3">Core Innovation</div>
+        <h2 class="section-heading">The Removable Navy Liner</h2>
+        <p>
+          Unlike standard coated bags where plastic lamination is permanently bonded to paper fibers — making recycling impossible — our liner remains completely separate.
+        </p>
+        <div class="material-card__points">
+          <div class="material-point">
+            <div class="material-point-dot"></div>
+            <span><strong>Fold-Over Rim Security:</strong> The liner's top 2–3 cm edge folds gently over the bag's upper rim to stay locked in position during packing.</span>
+          </div>
+          <div class="material-point">
+            <div class="material-point-dot"></div>
+            <span><strong>Zero Adhesive Construction:</strong> Not a drop of glue connects the fabric to the kraft paper, preserving both material streams.</span>
+          </div>
+          <div class="material-point">
+            <div class="material-point-dot"></div>
+            <span><strong>Quick-Lift Cleaning:</strong> Lift out the pouch anytime to shake out grocery crumbs or wipe clean with a cold damp cloth.</span>
+          </div>
+          <div class="material-point">
+            <div class="material-point-dot"></div>
+            <span><strong>Endless Portability:</strong> If your paper bag ever suffers structural fatigue, simply move the navy liner to any new grocery kraft bag.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION C4: THOUGHTFUL MATERIALS ===================== -->
+<section class="section bg-white" aria-label="Thoughtful Materials">
+  <div class="container">
+    <div class="text-center" style="max-width:680px; margin-inline:auto;">
+      <div class="section-label section-label--center mb-3">Conscious Chemistry</div>
+      <h2 class="section-heading">Thoughtful Materials</h2>
+      <p class="lead mt-4">Two humble materials working in tandem to replace petroleum-based bags.</p>
+    </div>
+
+    <div class="materials-dual-grid">
+      <!-- Kraft Paper Exterior -->
+      <div class="material-card">
+        <div class="material-card__header material-card__header--kraft">
+          <div class="material-card__title">Natural Kraft Paper Exterior</div>
+          <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase;">Renewable Outer</span>
+        </div>
+        <div class="material-card__body">
+          <p>
+            Sourced from sustainably managed unbleached wood pulp. The natural long fibers deliver high tensile strength while retaining a warm, rustic aesthetic.
+          </p>
+          <div class="material-card__points">
+            <div class="material-point"><div class="material-point-dot"></div><span>100% Uncoated, unlaminated virgin or recycled kraft</span></div>
+            <div class="material-point"><div class="material-point-dot"></div><span>Completely biodegradable and curbside recyclable</span></div>
+            <div class="material-point"><div class="material-point-dot"></div><span>Gusseted bottom provides a stable, self-standing base</span></div>
+            <div class="material-point"><div class="material-point-dot"></div><span>Reinforced patch handles withstand typical grocery weights</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reclaimed Fabric Interior -->
+      <div class="material-card">
+        <div class="material-card__header material-card__header--fabric">
+          <div class="material-card__title">Reclaimed Navy-Blue Fabric Liner</div>
+          <span style="font-size:0.8rem; font-weight:700; text-transform:uppercase;">Upcycled Inner</span>
+        </div>
+        <div class="material-card__body">
+          <p>
+            Salvaged from decommissioned umbrellas and raincoats. These textiles were engineered to be water-repellent, durable, and lightweight — making them ideal grocery shields.
+          </p>
+          <div class="material-card__points">
+            <div class="material-point"><div class="material-point-dot"></div><span>100% Reclaimed post-consumer synthetic waterproof weave</span></div>
+            <div class="material-point"><div class="material-point-dot"></div><span>Zero virgin textile production or petroleum extraction</span></div>
+            <div class="material-point"><div class="material-point-dot"></div><span>Repels splashes, drips, and cold-item condensation</span></div>
+            <div class="material-point"><div class="material-point-dot"></div><span>Stitched with heavy-duty thread for years of reuse</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION C5: WHY CHOOSE THIS BAG? ===================== -->
+<section class="section bg-soft-green" aria-label="Why Choose This Bag">
+  <div class="container">
+    <div class="text-center" style="max-width:680px; margin-inline:auto;">
+      <div class="section-label section-label--center mb-3">Honest Comparison</div>
+      <h2 class="section-heading">Why Choose This Bag?</h2>
+      <p class="lead mt-4">How our hybrid design measures against conventional shopping solutions.</p>
+    </div>
+
+    <div class="comparison-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Shopping Bag Type</th>
+            <th>KRAFTORA</th>
+            <th>Standard Kraft Paper Bag</th>
+            <th>Woven Plastic / Laminated Tote</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Moisture Resistance</strong></td>
+            <td>Splash-resistant navy liner repels wet groceries</td>
+            <td>Absorbs moisture and tears rapidly</td>
+            <td>Moisture-resistant but non-breathable</td>
+          </tr>
+          <tr>
+            <td><strong>Curbside Recyclability</strong></td>
+            <td>100% Recyclable (paper separates from cloth)</td>
+            <td>100% Recyclable</td>
+            <td>Non-recyclable mixed plastic laminates</td>
+          </tr>
+          <tr>
+            <td><strong>Virgin Plastic Content</strong></td>
+            <td>0% Virgin Plastic (100% Reclaimed fabric)</td>
+            <td>0% Plastic</td>
+            <td>100% Petroleum-derived polypropylene</td>
+          </tr>
+          <tr>
+            <td><strong>Reusable Longevity</strong></td>
+            <td>Liner lasts for years across multiple bags</td>
+            <td>1–2 uses before handle or base failure</td>
+            <td>Requires 100+ uses to offset carbon footprint</td>
+          </tr>
+          <tr>
+            <td><strong>Cleaning &amp; Maintenance</strong></td>
+            <td>Liner removes in seconds to wipe or rinse clean</td>
+            <td>Cannot be cleaned once soiled</td>
+            <td>Difficult to wash; harbors bacteria</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION C6: PRODUCT VISUAL GALLERY ===================== -->
+<section class="section bg-white" aria-label="Product Gallery">
+  <div class="container">
+    <div class="text-center" style="max-width:680px; margin-inline:auto;">
+      <div class="section-label section-label--center mb-3">Authentic Craft</div>
+      <h2 class="section-heading">Product Visual Gallery</h2>
+      <p class="lead mt-4">Every angle of our physical product prototype, faithfully documented.</p>
+    </div>
+
+    <div class="product-gallery-grid">
+      <div class="gallery-tile">
+        <div class="gallery-tile__img-wrap">
+          <img src="images/product-front.svg" alt="Standing front view of bag" loading="lazy"/>
+        </div>
+        <div class="gallery-tile__footer">
+          <div class="gallery-tile__title">Exterior Standing View</div>
+          <div class="gallery-tile__desc">Natural kraft exterior with navy rim fold</div>
+        </div>
+      </div>
+
+      <div class="gallery-tile">
+        <div class="gallery-tile__img-wrap">
+          <img src="images/product-open.svg" alt="Top-down open bag view" loading="lazy"/>
+        </div>
+        <div class="gallery-tile__footer">
+          <div class="gallery-tile__title">Interior Open View</div>
+          <div class="gallery-tile__desc">Tailored navy cloth liner sitting inside</div>
+        </div>
+      </div>
+
+      <div class="gallery-tile">
+        <div class="gallery-tile__img-wrap">
+          <img src="images/product-liner.svg" alt="Extracted navy fabric liner" loading="lazy"/>
+        </div>
+        <div class="gallery-tile__footer">
+          <div class="gallery-tile__title">Extracted Liner Pouch</div>
+          <div class="gallery-tile__desc">5-panel tailored reclaimed umbrella textile</div>
+        </div>
+      </div>
+
+      <div class="gallery-tile">
+        <div class="gallery-tile__img-wrap">
+          <img src="images/product-assembly.svg" alt="Two components side by side" loading="lazy"/>
+        </div>
+        <div class="gallery-tile__footer">
+          <div class="gallery-tile__title">Two-Part System</div>
+          <div class="gallery-tile__desc">Fully separable for cleaning and recycling</div>
+        </div>
+      </div>
+
+      <div class="gallery-tile" style="grid-column: span 2;">
+        <div class="gallery-tile__img-wrap" style="aspect-ratio: 2 / 1;">
+          <img src="images/product-reference.jpg" alt="Construction reference sheet" loading="lazy" style="object-fit:cover;"/>
+        </div>
+        <div class="gallery-tile__footer">
+          <div class="gallery-tile__title">Original Construction Blueprint</div>
+          <div class="gallery-tile__desc">The physical prototype, assembly guidelines &amp; cutaway schematic</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION D: PROMOTIONAL GREEN BANNER ===================== -->
+<section class="promo-banner" aria-label="Promotional banner">
+  <div class="container">
+    <div class="promo-banner__inner">
+      <div class="section-label section-label--center mb-3" style="color:var(--sage);">Ready for your daily errands?</div>
+      <h2 class="promo-banner__title">Carry Better. Live Greener.</h2>
+      <p class="promo-banner__text">
+        Join hundreds of thoughtful shoppers who have chosen a simpler, splash-resistant carry solution. Handcrafted with care from reclaimed materials.
+      </p>
+      <div style="display:flex; justify-content:center; gap:var(--s-4); flex-wrap:wrap;">
+        <a href="product.html" class="btn btn--cream btn--lg">
+          Shop Now — Small (₹40), Medium (₹80), Large (₹120)
+        </a>
+        <a href="product.html" class="btn btn--outline btn--lg" style="color:var(--white); border-color:rgba(255,255,255,0.4);">
+          Explore Full Details
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__brand-logo mb-3">
+          <img src="images/kraftora-logo-light.png" alt="KRAFTORA" class="footer__logo-img" width="99" height="56"/>
+        </div>
+        <p class="footer__brand-desc">
+          Thoughtful, splash-resistant reusable shopping bags combining natural kraft paper with removable liners crafted from reclaimed umbrella and raincoat fabric. Sustainable packaging. Elevated style.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Navigation</div>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html"        class="footer__link">Home</a></li>
+          <li><a href="shop.html"         class="footer__link">Shop</a></li>
+          <li><a href="about.html"        class="footer__link">About</a></li>
+          <li><a href="how-its-made.html" class="footer__link">How It's Made</a></li>
+          <li><a href="contact.html"      class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">The Product</div>
+        <ul class="footer__links" role="list">
+          <li><a href="product.html" class="footer__link">Splash-Resistant Bag</a></li>
+          <li><a href="how-its-made.html" class="footer__link">Making Process</a></li>
+          <li><a href="product.html" class="footer__link">Available Sizes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Customer Care</div>
+        <p class="footer__brand-desc" style="font-size:0.875rem; margin-bottom:var(--s-4);">
+          Questions regarding materials, sizing, bulk orders, or care recommendations? Our team is glad to assist.
+        </p>
+        <a href="contact.html" class="btn btn--secondary btn--sm" style="color:var(--white); border-color:var(--sage);">
+          Contact Our Team
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2024 KRAFTORA. All rights reserved.</span>
+      <span>Sustainable Packaging. Elevated Style.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

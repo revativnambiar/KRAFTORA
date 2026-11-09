@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560">
+  <defs>
+    <pattern id="paper-h" x="0" y="0" width="2" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="3" x2="480" y2="3" stroke="#A87845" stroke-width="0.4" opacity="0.25"/>
+    </pattern>
+    <pattern id="fabric-weft" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="4" x2="8" y2="4" stroke="#2C4F72" stroke-width="0.5" opacity="0.4"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#2C4F72" stroke-width="0.3" opacity="0.25"/>
+    </pattern>
+    <linearGradient id="bagShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.06)"/>
+      <stop offset="8%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="92%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.06)"/>
+    </linearGradient>
+    <linearGradient id="linerShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.08)"/>
+      <stop offset="10%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="90%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.08)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="560" fill="#FAF7F2"/>
+
+  <!-- Drop shadow -->
+  <ellipse cx="240" cy="535" rx="128" ry="14" fill="rgba(0,0,0,0.07)"/>
+
+  <!-- NAVY LINER — folded over the bag rim -->
+  <rect x="102" y="140" width="276" height="40" rx="2" fill="#1B3A5A"/>
+  <rect x="102" y="140" width="276" height="40" rx="2" fill="url(#fabric-weft)"/>
+  <!-- liner shading -->
+  <rect x="102" y="140" width="276" height="40" rx="2" fill="url(#linerShade)"/>
+  <!-- liner top highlight (fold edge) -->
+  <rect x="102" y="140" width="276" height="5" rx="2" fill="#264D74" opacity="0.6"/>
+  <!-- liner bottom shadow (where it meets bag) -->
+  <rect x="102" y="175" width="276" height="5" fill="rgba(0,0,0,0.08)"/>
+
+  <!-- KRAFT PAPER BAG BODY -->
+  <rect x="90" y="168" width="300" height="358" rx="2" fill="#C4976A"/>
+  <!-- paper texture overlay -->
+  <rect x="90" y="168" width="300" height="358" rx="2" fill="url(#paper-h)"/>
+  <!-- side shading for depth -->
+  <rect x="90" y="168" width="300" height="358" rx="2" fill="url(#bagShade)"/>
+  <!-- bag outline -->
+  <rect x="90" y="168" width="300" height="358" rx="2" fill="none" stroke="#A07545" stroke-width="1.2" opacity="0.6"/>
+  <!-- bottom crease -->
+  <line x1="90" y1="510" x2="390" y2="510" stroke="#A07545" stroke-width="0.8" opacity="0.4"/>
+  <!-- subtle bottom gusset fold hint -->
+  <line x1="90" y1="525" x2="390" y2="525" stroke="#A07545" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- LEFT ROPE HANDLE -->
+  <!-- main rope body -->
+  <path d="M 152 170 C 152 95 220 68 240 68 C 258 68 258 95 258 170"
+        fill="none" stroke="#7A5530" stroke-width="9" stroke-linecap="round" opacity="0.95"/>
+  <!-- rope highlight (simulates twist) -->
+  <path d="M 155 170 C 155 98 221 71 240 71 C 257 71 257 98 257 170"
+        fill="none" stroke="#A07A50" stroke-width="3.5" stroke-linecap="round" opacity="0.65"/>
+  <!-- rope shadow underside -->
+  <path d="M 150 170 C 150 93 219 66 239 66 C 259 66 260 93 260 170"
+        fill="none" stroke="#5A3D1E" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- RIGHT ROPE HANDLE -->
+  <path d="M 262 170 C 262 95 302 68 322 68 C 342 68 342 95 342 170"
+        fill="none" stroke="#7A5530" stroke-width="9" stroke-linecap="round" opacity="0.95"/>
+  <path d="M 265 170 C 265 98 303 71 323 71 C 341 71 341 98 341 170"
+        fill="none" stroke="#A07A50" stroke-width="3.5" stroke-linecap="round" opacity="0.65"/>
+  <path d="M 260 170 C 260 93 301 66 321 66 C 343 66 344 93 344 170"
+        fill="none" stroke="#5A3D1E" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Handle attachment reinforcement patches -->
+  <ellipse cx="152" cy="172" rx="10" ry="5" fill="#A87848" opacity="0.5"/>
+  <ellipse cx="258" cy="172" rx="10" ry="5" fill="#A87848" opacity="0.5"/>
+  <ellipse cx="262" cy="172" rx="10" ry="5" fill="#A87848" opacity="0.5"/>
+  <ellipse cx="342" cy="172" rx="10" ry="5" fill="#A87848" opacity="0.5"/>
+</svg>
+
